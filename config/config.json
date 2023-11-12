@@ -1,0 +1,48 @@
+{
+  "database": {
+    "psql": {
+      "host": "localhost",
+      "port": "5432",
+      "user": "root",
+      "password": "password",
+      "database": "tester",
+      "ssl": "disable"
+    },
+    "redis": {
+      "host": "localhost",
+      "port": "6379",
+      "password": "",
+      "database": 0,
+      "timeout": "3"
+    },
+    "redis_cache": {
+      "host": "localhost",
+      "port": "6379",
+      "password": "",
+      "database": 0,
+      "timeout": "3"
+    },
+    "influx": {
+      "host": "http://93.113.233.131",
+      "port": "8086",
+      "bucket": "my-bucket",
+      "org": "tester",
+      "token": "v0uzRH0FhCztO0PH1A5SycGqzNHlGwVI9cNdU4CTLsGicLaKrvF4RWXTSTOkOBlYi9vY4dKB-XDhUGJ7CM137A=="
+    }
+  },
+  "gateways": {
+    "idpay": {
+      "base_url": "https://api.idpay.ir",
+      "api_token": "1a467567-ce75-4693-973d-affd043be057"
+    },
+    "zarinpal": {
+      "base_url": "",
+      "api_key": ""
+    }
+  },
+  "services": {
+    "alert": {
+      "base_url": "http://localhost:8001"
+    }
+  }
+}

@@ -1,0 +1,117 @@
+<html>
+<head>
+    <meta name=3D"viewport" =
+    content=3D"width=3Ddevice-width">
+    <meta http-equiv=3D"Content-Typ=
+          e" content=3D"text/html; charset=3DUTF-8">
+    <title>Monitor is  =
+        DOWN : {{.PipelineName}}
+    </title>
+</head>
+<body style=3D"font-family: 'Roboto', Arial, sans-serif; color: =
+#131a26; background: #fefefe; line-height: 1.3em;">
+<div style=3D"font-family: 'Roboto', Arial, sans-serif; color: =
+#131a26; background: #fefefe; box-sizing: border-box; line-height: 1.3em;">
+<div style=3D"background: #131a26; padding: 45px 15px;">
+<div style=3D"max-width: 600px; margin: 0 auto;">
+<table style=3D" width: 100%; font-size: 14px; color: #ffffff;"=
+width=3D"100%">
+<tbody style=3D"">
+<tr =
+style=3D"">
+<td width=3D"180" style=3D" font-size: =
+        36px;">
+    <a href=3D"https://uptimerobot.com/dashboard?=
+       utm_source=3DalertMessage&utm_medium=3Demail&utm_campaign=3Ddown-5x-free&ut=
+       m_content=3DheaderLogo#mainDashboard" style=3D" color: #3bd671 !=
+               important;"><img src=3D"https://cdn.mcauto-images-production.sendgrid.=
+                                net/3e8054f26aace367/6a696f89-4c68-4736-83c3-c08df64e1a0d/549x79.png" =
+        alt=3D"UptimeRobot" width=3D"180" style=3D" max-width: 180px; display: =
+        inline-block;"></a>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+    <h1 style=3D"font-size: 36px; color: =
+            #ffffff; margin-top: 45px; margin-bottom: 10px; line-height: 28px;">
+    {{.PipelineName}} is <span style=3D"color:#df484a">down</span>.
+    </h1>
+</div>
+</div>
+</div>
+<div style=3D"max-width: 600px; margin: 30px auto 0 =
+        auto; padding: 0 10px;">
+
+<div style=3D"background: #ffffff; =
+        border-radius: 6px; box-shadow: 0 20px 40px 0 rgba(0,0,0,0.1); padding: =
+             25px; border: 1px solid #efefef; font-size: 14px; margin-bottom: 25px;">
+<div>
+
+    <p style=3D"line-height: 20px;">Hello {{.Username}},</p>
+    <p style=3D"line-height: 20px;"><strong>We=
+    just detected an incident on your monitor. Your service is currently down.=
+</strong></p>
+    <p style=3D"line-height: 20px;">We will =
+    alert you when it&apos;s up again.</p>
+</div>
+
+<div style=3D"padding: 20px; background-color: #f9f9f9; =
+        border-radius: 6px; margin-top: 25px; line-height: 16px;">
+
+<div style=3D"font-size: 12px; color: #687790;">Monitor =
+name</div>
+<h2 style=3D"font-size: 14px; margin-bottom: 5px; =
+        margin-top: 3px;">{{.PipelineName}}</h2>
+<hr style=3D"border: 1px solid =
+        #dedede; border-bottom: 0; margin: 10px 0;">
+
+<div =
+style=3D"color: #687790; font-size: 12px;">Checked URL</div>
+<h2 style=3D"font-size: 14px; margin-bottom: 5px; margin-top:=
+        3px; line-height: 16px;"><code>
+    <a href=3D"{{.Address}}" style=3D"color: #131a26 !important; text-decoration: none !=
+            important;">{{.Address}}</a></code></h2>
+<hr style=3D"border: 1px solid #dedede; border-bottom: 0; =
+        margin: 10px 0;">
+
+<div style=3D"color: #687790; font-size: =
+        12px;">New Datacenters Showed Problem</div>
+<h2 style=3D"font-size: 14px; =
+        margin-bottom: 5px; margin-top: 3px;">
+{{.FailedDatacenters}}
+</h2>
+<hr style=3D"border: 1px solid #dedede; =
+        border-bottom: 0; margin: 10px 0;">
+
+<div style=3D"color: #687790; font-size: =
+        12px;">Datacenters Resolved</div>
+<h2 style=3D"font-size: 14px; =
+        margin-bottom: 5px; margin-top: 3px;">
+{{.ResolvedDatacenters}}
+</h2>
+<hr style=3D"border: 1px solid #dedede; =
+        border-bottom: 0; margin: 10px 0;">
+
+
+<div style=3D"color: #687790; font-size: =
+        12px;">Root cause</div>
+<h2 style=3D"font-size: 14px; =
+        margin-bottom: 5px; margin-top: 3px;">
+{{.RootCause}}
+</h2>
+<hr style=3D"border: 1px solid #dedede; =
+        border-bottom: 0; margin: 10px 0;">
+
+<div style=3D"font-size:=
+     12px; color: #687790;">Incident started at</div>
+<h2 =
+style=3D"font-size: 14px; margin-bottom: 5px; margin-top: 3px;">{{.Time}}</h2>
+<hr style=3D"border: 1px solid #dedede; =
+        border-bottom: 0; margin: 10px 0;">
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

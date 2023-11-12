@@ -1,0 +1,36 @@
+{
+  "endpoints": [
+    {
+      "url": "api.test.com",
+      "body": {
+        "first_object": "my object",
+        "second_object": 234
+      },
+      "body_dependency": {
+
+      },
+      "header": {
+        "content_type": "application/json"
+      },
+      "header_dependency": {
+
+      }
+    },
+    {
+      "url": "api2.test.com",
+      "body": {
+        "first_object": "my object",
+        "second_object": 123
+      },
+      "body_dependency": {
+        "$header{}_content_type": ""
+      },
+      "header": {
+        "content_type": "application/json"
+      },
+      "header_dependency": {
+
+      }
+    }
+  ]
+}
